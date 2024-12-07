@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h1 align=center><b>LearnAlite</b></h1>
+<h1 align=center><b>KMS- EDUHUB</b></h1>
 
 <!-- <br>
 

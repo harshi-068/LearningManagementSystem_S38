@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .success-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+        }
+        .feedback-info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h2>Thank You for Your Feedback!</h2>
+        <p>Your feedback has been successfully submitted. Below is a summary of your responses:</p>
+
+        <div class="feedback-info">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Course Name:</strong> <span id="course_name"></span></p>
+            <p><strong>Course Code:</strong> <span id="course_code"></span></p>
+            <p><strong>Your Rating:</strong> <span id="rating"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get('name'),
+                email: params.get('email'),
+                course_name: params.get('course_name'),
+                course_code: params.get('course_code'),
+                rating: params.get('rating')
+            };
+        }
+
+        // Get the query parameters and display them
+        const feedbackData = getQueryParams();
+
+        document.getElementById('name').textContent = feedbackData.name;
+        document.getElementById('email').textContent = feedbackData.email;
+        document.getElementById('course_name').textContent = feedbackData.course_name;
+        document.getElementById('course_code').textContent = feedbackData.course_code;
+        document.getElementById('rating').textContent = feedbackData.rating + ' Stars';
+    </script>
+</body>
+</html>

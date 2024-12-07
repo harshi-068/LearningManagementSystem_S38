@@ -379,11 +379,11 @@ button {
 </style>
 </head>
 
-<body style="  background-image: url('/coursebg.jpg')" >
+<body style="  background-color: linear-gradient(to right top,#eeaeca,#94bbe9)" >
 <div class="n p snipcss-xLKpv">
   <div class="at au av aw ax ay az al">
     <div class="ba bb n bc">
-     <div style="float: left; padding: 15px; color: black; font-size: 20px; font-weight: 10px;"><b>Learnalite</b></div>
+     <div style="float: left; padding: 15px; color: black; font-size: 20px; font-weight: 10px;"><b>LMS-EDUHUB</b></div>
      
       <div class="ah bt">
       </div>

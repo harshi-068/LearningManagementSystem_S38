@@ -32,7 +32,7 @@
 }
 
         .course {
-            background-color: #fff;
+            background-color: linear-gradient(to right top,#eeaeca,#94bbe9);
             border-radius: 10px;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
             display: flex;
@@ -88,7 +88,7 @@
         }
 
         .progress {
-            background-color: #ddd;
+            background-color: #eeaeca;
             border-radius: 3px;
             height: 5px;
             width: 100%;

@@ -10,7 +10,7 @@
  
      </style>
 </head>
-<body style="background-image: linear-gradient(135deg, #fd7b03, #fff4e0);">
+<body style="background-image: linear-gradient(to right top,#eeaeca,#94bbe9);">
 
 
 <br>
@@ -18,7 +18,6 @@
 <h3 align=center><u>Add Student</u></h3>
 
 <br>
-
 <form:form method="post" action="insertcustomer" modelAttribute="customer">
 
 <table align=center>

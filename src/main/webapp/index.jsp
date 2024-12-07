@@ -115,7 +115,7 @@
             box-shadow: none;
             font-weight: 400;
             border-radius: 100px;
-            background-color: #fe9901;
+            background-color: #94bbe9;
             border-color: #fe9901;
             color: rgb(0, 0, 0);
             padding: 24px 40px;
@@ -153,7 +153,7 @@
             color: rgb(20, 20, 43);
             font-weight: 400;
             border-radius: 100px;
-            background-color: #f68600;
+            background-color: #eeaeca;
             border-color: rgb(226, 227, 233);
             padding: 24px 40px;
             font-family: 'Space Grotesk', sans-serif;
@@ -239,13 +239,16 @@
                             <b>Learn wherever and whenever!!!</b>
                         </p>
                         <div class="style-41">
-                            <div class="style-42"><a class="style-43" href="subscription">Subscribe</a><a class="style-44" href="explore">Explore</a></div>
+                            <div class="style-42"><a class="style-43" href="payment.html">Subscribe</a>Subscribe</a><a class="style-44" href="explore">Explore</a></div>
+                        </div>
+                        <div class="style-41">
+                            <div class="style-42"><a class="style-43" href="FeedbackForm.html">Feedback</a>Subscribe</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="style-45">
                     <div class="style-46">
-                        <img src="https://i.pinimg.com/originals/74/47/04/7447042a41a9bff1f39695ec4287c774.gif" alt="" class="style-47" />
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d1773f73606457.5c0f521fbdecc.gif" alt="" class="style-47" />
                     </div>
                 </div>
             </div>
@@ -297,11 +300,10 @@
  </li>
         </p>
         <p class="card-text">
-          <small class="text-muted">Learnalite</small>
+          <small class="text-muted">LMS-EDUHUB</small>
         </p>
       </div>
     </div>
-  </div>
 </div>
 
 <br>

@@ -12,9 +12,9 @@
   }
 </style>
 </head>
-<body style="background-image: linear-gradient(to right top,#f68600,#f68600)">
+<body style="background-image: linear-gradient(to right top,#eeaeca,#94bbe9)">
 
-<center><h3><b>Learnalite</b></h3></center>
+<center><h3><b>LMS- EDUHUB</b></h3></center>
 
 
 <br>

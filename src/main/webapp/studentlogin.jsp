@@ -1,175 +1,148 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
-                        <html>
-                            <head>
-                                <meta charset='utf-8'>
-                                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title></title>
-                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
-                                <link href='' rel='stylesheet'>
-                                <style>@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
 
-body {
-    background: #f5f5f5;
-}
+        body {
+            background: linear-gradient(to right top,#eeaeca,#94bbe9);
+        }
 
-@media only screen and (max-width: 767px) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
+        @media only screen and (max-width: 767px) {
+            .hide-on-mobile {
+                display: none;
+            }
+        }
 
-.login-box {
-    background: url(https://i.pinimg.com/736x/d1/10/de/d110dee051323ffa6f981d58aa2366ea.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    margin: 50px auto;
-    min-height: 700px;
-    -webkit-box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
-}
-g
-.logo {
-    font-family: "Script MT";
-    font-size: 54px;
-    text-align: center;
-    color: #888888;
-    margin-bottom: 50px;
-}
+        .login-box {
+            background-image: images/background-student-login.jpeg;
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            margin: 50px auto;
+            min-height: 700px;
+            box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+        }
 
-.logo .logo-font {
-    color: #ffc13b;
-}
+        .logo {
+            font-family: "Script MT";
+            font-size: 54px;
+            text-align: center;
+            color: #888888;
+            margin-bottom: 50px;
+        }
 
-@media only screen and (max-width: 767px) {
-    .logo {
-        font-size: 34px;
-    }
-}
+        .logo .logo-font {
+            color: #ffc13b;
+        }
 
-.header-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
+        .header-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.login-form {
-    max-width: 300px;
-    margin: 0 auto;
-}
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
 
-.login-form .form-control {
-    border-radius: 0;
-    margin-bottom: 30px;
-}
+        .login-form .form-control {
+            border-radius: 0;
+            margin-bottom: 20px;
+        }
 
-.login-form .form-group {
-    position: relative;
-}
+        .login-form .btn {
+            border-radius: 0;
+            margin-bottom: 30px;
+            background: #ffc13b;
+            border-color: #ffc13b;
+        }
 
-.login-form .form-group .forgot-password {
-    position: absolute;
-    top: 6px;
-    right: 15px;
-}
+        .carousel-inner img {
+            height: 80px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
-.login-form .btn {
-    border-radius: 0;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
+        .slider-feature-card {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+        }
 
-.login-form .btn.btn-primary {
-    background: #ffc13b;
-    border-color: #ffc13b;
-}
+        .password-strength {
+            font-size: 12px;
+            color: #888;
+        }
 
-.slider-feature-card {
-    background: #fff;
-    max-width: 280px;
-    margin: 0 auto;
-    padding: 30px;
-    text-align: center;
-    -webkit-box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
-}
+        .password-requirements {
+            font-size: 12px;
+            color: #888;
+            list-style: none;
+            padding: 0;
+        }
 
-.slider-feature-card img {
-    height: 80px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.slider-feature-card h3,
-.slider-feature-card p {
-    margin-bottom: 30px;
-}
-
-.carousel-indicators {
-    bottom: -50px;
-}
-
-.carousel-indicators li {
-    cursor: pointer;
-}</style>
-
-
+        .password-requirements li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
 <body>
 <%@ include file="studentnavbar.jsp" %>
-                                <script type='text/javascript' src=''></script>
-                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
-                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
-                            </head>
-                            <body oncontextmenu='return false' class='snippet-body'>
-                            <section class="body">
+<section>
     <div class="container">
         <div class="login-box">
             <div class="row">
+                <!-- Left Section -->
                 <div class="col-sm-6">
                     <div class="logo">
-                        <span class="logo-font"  style="font-family: 'Script MT'">Go</span>Learnalite
+                        <span class="logo-font">LMS-</span>EDUHUB
                     </div>
                     <span class="blink">
-        <h3 style="color: red" align="center">${message}</h3>
-    </span>
-                </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <br>
+                        <h3 style="color: red" align="center">${message}</h3>
+                    </span>
                     <h3 class="header-title">LOGIN</h3>
-                    <form class="login-form" method="post" action="checkstudentlogin">
+                    <form class="login-form" method="post" action="checkstudentlogin" onsubmit="return validateCaptcha()">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="email"  placeholder="Email or UserName">
+                            <input type="text" class="form-control" name="email" placeholder="Email or Username" required>
                         </div>
                         <div class="form-group">
-                            <input type="Password" class="form-control" name="password" placeholder="Password">
-                            
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                            <div class="password-strength">
+                                <p><strong>Password should:</strong></p>
+                                <ul class="password-requirements">
+                                    <li>Be at least 8 characters long</li>
+                                    <li>Contain at least one uppercase letter</li>
+                                    <li>Contain at least one lowercase letter</li>
+                                    <li>Include at least one number</li>
+                                    <li>Include at least one special character (e.g., !@#$%)</li>
+                                </ul>
+                            </div>
                         </div>
+
+                        <!-- Math Captcha Section -->
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block">LOGIN</button>
-                            
+                            <label id="mathCaptchaQuestion"></label>
+                            <input type="text" id="captchaAnswer" class="form-control" placeholder="Enter answer" required>
+                            <span id="captchaError" style="color:red; display:none;">Incorrect answer, please try again.</span>
                         </div>
-                        <script src="https://www.google.com/recaptcha/api.js"></script>
-                        
-                        <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LcbsPUoAAAAAOyX4J-fNH82n7OxcZqyjle3XC96"></div>
-                         <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
- <button class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
- 
-                        
+
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" type="submit">LOGIN</button>
+                        </div>
                         <div class="form-group">
                             <div class="text-center">New Member? <a href="addcustomer">Sign up Now</a></div>
                         </div>
                     </form>
                 </div>
+
+                <!-- Right Section with Carousel -->
                 <div class="col-sm-6 hide-on-mobile">
                     <div id="demo" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -177,24 +150,24 @@ g
                             <li data-target="#demo" data-slide-to="0" class="active"></li>
                             <li data-target="#demo" data-slide-to="1"></li>
                         </ul>
-                        <!-- The slideshow -->
+                        <!-- Slideshow Content -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="slider-feature-card">
-                                    <img src="https://i.imgur.com/YMn8Xo1.png" alt="">
-                                    <h3 class="slider-title">Welcome To Learnalite</h3>
+                                    <img src="https://i.imgur.com/YMn8Xo1.png" alt="Welcome Image">
+                                    <h3 class="slider-title">Welcome To Learning Management System</h3>
                                     <p class="slider-description">Heartly welcome to Grow up Your skills ..</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="slider-feature-card">
-                                    <img src="https://i.imgur.com/Yi5KXKM.png" alt="">
+                                    <img src="https://i.imgur.com/Yi5KXKM.png" alt="Faculty Image">
                                     <h3 class="slider-title">Providing Best Faculty</h3>
                                     <p class="slider-description">Keen Explanation of every Topic by excellent mentors</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Left and right controls -->
+                        <!-- Controls -->
                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
@@ -207,6 +180,34 @@ g
         </div>
     </div>
 </section>
-                            <script type='text/javascript'></script>
-                            </body>
-                        </html>
+
+<script>
+    function generateCaptcha() {
+        var num1 = Math.floor(Math.random() * 10) + 1;
+        var num2 = Math.floor(Math.random() * 10) + 1;
+        var operator = (Math.random() > 0.5) ? "+" : "-"; 
+        var captchaQuestion = num1 + " " + operator + " " + num2 + " = ?";
+        var captchaAnswer = (operator === "+") ? num1 + num2 : num1 - num2;
+
+        window.correctCaptchaAnswer = captchaAnswer;
+
+        document.getElementById("mathCaptchaQuestion").innerHTML = captchaQuestion;
+    }
+
+    function validateCaptcha() {
+        var userAnswer = document.getElementById("captchaAnswer").value;
+        if (parseInt(userAnswer) !== window.correctCaptchaAnswer) {
+            document.getElementById("captchaError").style.display = "block";
+            return false;
+        }
+        document.getElementById("captchaError").style.display = "none";
+        return true;
+    }
+
+    window.onload = generateCaptcha;
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>

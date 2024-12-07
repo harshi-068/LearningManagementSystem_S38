@@ -706,8 +706,7 @@ ul ul  {
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand navbar-link smooth-scroll notranslate" href="#">
-        <img src="https://i.pinimg.com/474x/6c/3f/47/6c3f47c02ed5de5b7ede09f06a6d8396.jpg" width="40" height="40" alt="Logo">
-       LearnAlite
+       LMS- EDUHUB
       </a>
       <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
         <span class="sr-only">
@@ -724,11 +723,14 @@ ul ul  {
     <div class="collapse navbar-collapse snipcss0-0-0-1" id="navcol-1">
       
       <ul class="nav navbar-nav navbar-right snipcss0-1-1-3">
+      
+      
         <li role="presentation" class="snipcss0-2-3-4">
-          <a href="#features" class="smooth-scroll snipcss0-3-4-5">
-            Features
+          <a href="assignment_submission.jsp" class="smooth-scroll snipcss0-3-4-5">
+            Assignments
           </a>
         </li>
+        
         <li class="dropdown snipcss0-2-3-6">
           <a data-toggle="dropdown" aria-expanded="true" href="studentcourse.jsp" class="dropdown-toggle snipcss0-3-6-7">
             Material

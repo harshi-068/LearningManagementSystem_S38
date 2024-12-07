@@ -1049,7 +1049,7 @@ span.badge {
         }
     </style>
 </head>
-<body style="background-image: linear-gradient(to right top,#f68600,#f68600)">
+<body style="background-image: linear-gradient(to right top,#eeaeca,#94bbe9)">
 <%@ include file="navbar.jsp" %> 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
@@ -1314,7 +1314,6 @@ span.badge {
 <!---->
 <!-- Footer-->
 <footer class="footer">
-  <p>Created by <a class="yo" href="https://codepen.io/hluebbering">LearnAlite</a> | 2023 </p>
   <div class="footer-social">
 
     <a class="footer-social-link" href="https://codepen.io/hluebbering" target="__blank">

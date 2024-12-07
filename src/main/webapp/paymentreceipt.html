@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Bill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bill-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bill-container h2 {
+            text-align: center;
+            color: #fe9901;
+        }
+
+        .bill-details {
+            margin-top: 30px;
+        }
+
+        .bill-details td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fe9901;
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #fe9901;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #f68600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bill-container">
+        <h2>Payment Receipt</h2>
+        <div class="bill-details">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Transaction ID:</td>
+                        <td>261712090812</td> <!-- Display Transaction ID -->
+                    </tr>
+                    <tr>
+                        <td>Customer Name:</td>
+                        <td>Harshita Tolety</td> <!-- Display Customer Name -->
+                    </tr>
+                    <tr>
+                        <td>Amount Paid:</td>
+                        <td>₹2000</td> <!-- Display Amount -->
+                    </tr>
+                    <tr>
+                        <td>Payment Date:</td>
+                        <td>07/12/2024</td> <!-- Display Payment Date (this can be a current date) -->
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                Total: ₹2000
+            </div>
+        </div>
+
+        <a href="index.jsp" class="back-button">Back to Homepage</a>
+    </div>
+
+</body>
+</html>
